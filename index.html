@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="number">Contact Number:</label>
+                <input type="text" id="number" name="number" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label>Select gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <div class="input-group">
+                <label>Languages Known:</label>
+                <div>
+                    <input type="checkbox" id="english" name="languages" value="english">
+                    <label for="english">English</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="spanish" name="languages" value="spanish">
+                    <label for="spanish">Spanish</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="german" name="languages" value="german">
+                    <label for="german">German</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mandarin" name="languages" value="mandarin">
+                    <label for="mandarin">Mandarin</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="support or help">Support or Help</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
